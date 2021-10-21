@@ -26,7 +26,7 @@ main().catch(err => console.log(err));
 async function main() {
   // await mongoose.connect("mongodb+srv://brisstone:<password>@cluster0.xi14f.mongodb.net/ReactNodeShoppingCart?retryWrites=true&w=majority",
   
-  await mongoose.connect(process.env.MONGO_URL || "mongodb+srv://<password>:MightyGod28@cluster1.qdvzo.mongodb.net/ReactNodeShoppingCart?retryWrites=true&w=majority",
+  await mongoose.connect(process.env.MONGO_URL || "mongodb+srv://brisstone:<password>@cluster1.qdvzo.mongodb.net/ReactNodeShoppingCart?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true,
    }
   );
