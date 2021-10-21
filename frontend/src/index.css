@@ -24,7 +24,11 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
+
+
+
 }
+
 header {
   grid-area: header;
   background-color: orange;
@@ -466,4 +470,32 @@ img.large {
 }
 .support-users .unread {
   background-color: #f02020;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  html{
+    font-size: 40%
+  }
+  .grid-container{
+    /* grid-template-columns: 1fr; */
+  grid-template-rows: 10rem 1fr 3rem;
+  }
+  header {
+    grid-area: header;
+    background-color: orange;
+    /* height: 10rem; */
+  }
+
+  /* a.brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  } */
+
+  .search{
+    margin-left: 0rem;
+  }
+
 }
